@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    ## 数据库相关配置
+    url: jdbc:mysql://127.0.0.1:3306/example?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver # 指定驱动类
+  jpa:
+    hibernate:
+      ddl-auto: update # 自动创建表以及更新表结构，生产环境慎用
+    show-sql: true # 打印执行的SQL
